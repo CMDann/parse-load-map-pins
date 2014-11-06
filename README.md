@@ -1,6 +1,8 @@
 ParseLoadMapPins
 ================
 
+[![endorse](https://api.coderwall.com/cmdann/endorsecount.png)](https://coderwall.com/cmdann)
+
 Another Parse demo for Android at RRC BIT. This demo elaborates on <a href="https://github.com/CMDann/ParseSaveLoadDemo">my previous example</a> to bring you data loaded remotely from Parse. This shows queries for data using the service, not all data in my presentation was valid for the query so some markers are not loaded.
 
 You need a google maps API key and a Parse.com account for this example to work for you! The wear component is for next time, ignore it for now.
