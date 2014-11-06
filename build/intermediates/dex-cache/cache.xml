@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/cmdann/Development/Repositories/Closed Source/Android/TheSights/mobile/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-f4ff47e4159a8f3660a4015798a92ea1ffa1479c.jar"
+        jar="/Users/cmdann/Development/Repositories/Closed Source/Android/TheSights/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="/Users/cmdann/Development/Repositories/Closed Source/Android/TheSights/mobile/build/intermediates/pre-dexed/debug/classes-ae2dfbc87be3730698265423eac20f9044335a79.jar"
+        jar="/Users/cmdann/Development/Repositories/Closed Source/Android/TheSights/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="/Users/cmdann/Development/Repositories/Closed Source/Android/TheSights/mobile/build/intermediates/pre-dexed/debug/classes-d11625bf9beaffabfc5033d57283fc0001c14ced.jar"
+        jar="/Users/cmdann/Development/Repositories/Closed Source/Android/TheSights/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="0f700f6802ba1a1f1fa7ac26d5db0666a89d75a6"/>
+    <item
+        dex="/Users/cmdann/Development/Repositories/Closed Source/Android/TheSights/mobile/build/intermediates/pre-dexed/debug/Parse-1.7.1-e3704008f60fa68aad75f78e5d5244c7ad41e390.jar"
+        jar="/Users/cmdann/Development/Repositories/Closed Source/Android/TheSights/mobile/libs/Parse-1.7.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="87c45f9f66da531a65f065ee32f603c7e6db1528"/>
+    <item
+        dex="/Users/cmdann/Development/Repositories/Closed Source/Android/TheSights/mobile/build/intermediates/pre-dexed/debug/bolts-android-1.1.3-b9a4942839cc71cd67c9e040c12ce4aff0a783cc.jar"
+        jar="/Users/cmdann/Development/Repositories/Closed Source/Android/TheSights/mobile/libs/bolts-android-1.1.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e61e3dfc57eaa5c97f9e7061db5608fc7d02d39e"/>
+    <item
+        dex="/Users/cmdann/Development/Repositories/Closed Source/Android/TheSights/mobile/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-70a19b53f32642027db1b7d3b8ee358c27ca8a97.jar"
+        jar="/Users/cmdann/Development/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+    <item
+        dex="/Users/cmdann/Development/Repositories/Closed Source/Android/TheSights/mobile/build/intermediates/pre-dexed/debug/classes-2d6ca23f57c8d9ce6548d76681155e89c6dca963.jar"
+        jar="/Users/cmdann/Development/Repositories/Closed Source/Android/TheSights/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef"/>
+
+</pre-dex-items>
