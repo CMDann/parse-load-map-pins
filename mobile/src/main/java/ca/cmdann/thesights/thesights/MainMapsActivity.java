@@ -2,13 +2,21 @@ package ca.cmdann.thesights.thesights;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.parse.FindCallback;
 import com.parse.Parse;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 import com.parse.PushService;
+
+import java.util.List;
 
 public class MainMapsActivity extends FragmentActivity {
 
@@ -21,8 +29,8 @@ public class MainMapsActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_maps);
-        setUpMapIfNeeded();
         setUpParse();
+        setUpMapIfNeeded();
     }
 
     @Override
@@ -71,6 +79,49 @@ public class MainMapsActivity extends FragmentActivity {
      * This should only be called once and when we are sure that {@link #mMap} is not null.
      */
     private void setUpMap() {
-        mMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
+//        mMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
+
+        create_map_pins();
+    }
+
+    // Get the pins from parse
+    public void create_map_pins(){
+
+        // Say we are querying for markers
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("markers");
+
+        // Set the query to look for some constraint
+        query.whereEqualTo("username", "student");
+
+        // Had to manually import
+        // import com.parse.ParseException;
+        // This is weird because auto import should work.
+
+        // Async get the results from Parse
+        query.findInBackground(new FindCallback<ParseObject>() {
+            public void done(List<ParseObject> pins, ParseException e) {
+
+                // No error present!
+                if (e == null) {
+                    Log.d("score", "Retrieved " + pins.size() + " scores");
+//                    mMap.addMarker(new MarkerOptions().position(new LatLng(pin, 0pin).title("Marker"));
+
+                    for (int i = 0; i < pins.size(); i++) {
+                        ParseObject current_pin = pins.get(i);
+
+                        float current_lat = current_pin.getNumber("lat").floatValue();
+                        float current_lng = current_pin.getNumber("lng").floatValue();
+
+                        mMap.addMarker(new MarkerOptions().position(new LatLng(current_lat, current_lng)));
+
+                        if (i == 0){
+                            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(current_lat, current_lng), 18));
+                        }
+                    }
+                } else {
+                    Log.d("score", "Error: " + e.getMessage());
+                }
+            }
+        });
     }
 }
